@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -29,6 +29,6 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      port: 90
+      port: 9090
       targetPort: 80
-  type: LoadBalancer
+  type: NodePort
