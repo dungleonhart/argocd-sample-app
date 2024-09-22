@@ -27,4 +27,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: your_dockerhub_username/your_repository_name:pr-${{ github.event.number }}
+        tags: ${{ secrets.DOCKER_USERNAME }}/sample-flask-app:pr-${{ github.event.number }}
