@@ -65,4 +65,5 @@ def get_all_users():
     return jsonify(users), 200
 
 if __name__ == '__main__':
+    print("starting server")
     app.run(debug=True, port=5000)
